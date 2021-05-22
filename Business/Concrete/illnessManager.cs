@@ -33,7 +33,7 @@ namespace Business.Concrete
         public bool Update(illness entity)
         {
             return _illnesDal.Update(entity);
-        }
+        } 
 
         public bool Delete(illness entity)
         {

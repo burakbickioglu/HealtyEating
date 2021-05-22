@@ -8,5 +8,5 @@ namespace DataAccess.Concrete
 {
     public class EfUserTypeDal : EfRepositoryBase<UserType, HealtyEatingContext> ,IUserTypeDal
     {
-    }
+    } 
 }

@@ -7,5 +7,5 @@ namespace DataAccess.Abstract
 {
     public interface IillnesDal : IEntityRepository<illness>
     {
-    }
+    } 
 }

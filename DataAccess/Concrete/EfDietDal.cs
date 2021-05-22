@@ -8,5 +8,5 @@ namespace DataAccess.Concrete
 {
     public class EfDietDal : EfRepositoryBase<Diet, HealtyEatingContext> , IDietDal
     {
-    }
+    } 
 }

@@ -8,7 +8,7 @@ using Entities.Abstract;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Concrete
-{
+{ 
     public class EfRepositoryBase<TEntity, TContext> : IEntityRepository<TEntity>
         where TEntity : class, IEntity, new()
         where TContext : DbContext, new()

@@ -13,7 +13,7 @@ namespace Business.Concrete
 
         public UserTypeManager(IUserTypeDal userTypeDal)
         {
-            _userTypeDal = userTypeDal;
+            _userTypeDal = userTypeDal; 
         }
 
         public List<UserType> GetAll()

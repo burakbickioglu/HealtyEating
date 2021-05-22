@@ -34,7 +34,7 @@ namespace Business.Concrete
         {
             return _dietDal.Update(entity);
         }
-
+         
         public bool Delete(Diet entity)
         {
             return _dietDal.Delete(entity);

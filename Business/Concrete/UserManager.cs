@@ -36,7 +36,7 @@ namespace Business.Concrete
             return _userDal.Update(entity);
         }
 
-        public bool Delete(User entity)
+        public bool Delete(User entity) 
         {
             return _userDal.Delete(entity);
         }

@@ -18,7 +18,7 @@ namespace Business.Concrete
         public List<Account> GetAll()
         {
             return _accountDal.GetAll();
-        }
+        } 
 
         public Account Get(Account entity)
         {

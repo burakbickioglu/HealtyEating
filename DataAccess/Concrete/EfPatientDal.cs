@@ -7,6 +7,6 @@ using Entities.Concrete;
 namespace DataAccess.Concrete
 {
     public class EfPatientDal : EfRepositoryBase<Patient, HealtyEatingContext>, IPatientDal
-    {
+    { 
     }
 }
