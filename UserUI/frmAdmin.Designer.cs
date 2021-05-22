@@ -198,6 +198,7 @@ namespace UserUI
             this.btnDiyetisyenEkle.TabIndex = 2;
             this.btnDiyetisyenEkle.Text = "Diyetisyen Ekle";
             this.btnDiyetisyenEkle.UseVisualStyleBackColor = true;
+            this.btnDiyetisyenEkle.Click += new System.EventHandler(this.btnDiyetisyenEkle_Click);
             // 
             // lblDiyetisyenTel
             // 
@@ -211,7 +212,7 @@ namespace UserUI
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(77, 246);
+            this.label13.Location = new System.Drawing.Point(98, 246);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(107, 25);
             this.label13.TabIndex = 18;
@@ -229,7 +230,7 @@ namespace UserUI
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(124, 209);
+            this.label15.Location = new System.Drawing.Point(138, 209);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(67, 25);
             this.label15.TabIndex = 16;
@@ -247,7 +248,7 @@ namespace UserUI
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(161, 172);
+            this.label17.Location = new System.Drawing.Point(168, 172);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(37, 25);
             this.label17.TabIndex = 14;
@@ -265,7 +266,7 @@ namespace UserUI
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(124, 135);
+            this.label19.Location = new System.Drawing.Point(138, 135);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(67, 25);
             this.label19.TabIndex = 12;
@@ -283,7 +284,7 @@ namespace UserUI
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(157, 98);
+            this.label21.Location = new System.Drawing.Point(166, 98);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(39, 25);
             this.label21.TabIndex = 10;
@@ -296,6 +297,7 @@ namespace UserUI
             this.cmbDiyetisyen.Name = "cmbDiyetisyen";
             this.cmbDiyetisyen.Size = new System.Drawing.Size(225, 33);
             this.cmbDiyetisyen.TabIndex = 1;
+            this.cmbDiyetisyen.SelectedIndexChanged += new System.EventHandler(this.cmbDiyetisyen_SelectedIndexChanged);
             // 
             // label11
             // 

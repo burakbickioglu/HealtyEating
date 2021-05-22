@@ -4,6 +4,7 @@ using System.Text;
 using Business.Abstract;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.Dto_s;
 
 namespace Business.Concrete
 {
@@ -39,6 +40,11 @@ namespace Business.Concrete
         public bool Delete(User entity) 
         {
             return _userDal.Delete(entity);
+        }
+
+        public List<DietitianDto> GetDietitianDetail()
+        {
+            return _userDal.GetDietitianDetail();
         }
     }
 }

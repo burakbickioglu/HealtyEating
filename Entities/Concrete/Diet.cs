@@ -9,7 +9,6 @@ namespace Entities.Concrete
     {
         public int DietId { get; set; }
         public string DietName { get; set; } 
-        public string DietDescription { get; set; }
 
     }
 }

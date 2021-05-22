@@ -34,10 +34,6 @@ namespace UserUI
             account.Password = txtSifre.Text;
             account = accountManager.getByUserName(account);
 
-            
-
-            
-
             if (account!=null &&  account.UserName == txtKullaniciAd.Text && account.Password == txtSifre.Text)
             {
                 User user = new User();
@@ -52,7 +48,6 @@ namespace UserUI
                 {
                     frmDiyetisyen frmDiyetisyen = new frmDiyetisyen(user);
                     frmDiyetisyen.ShowDialog();
-                    
                 }
                 else
                 {
@@ -63,8 +58,6 @@ namespace UserUI
             {
                 MessageBox.Show("Kullanıcı adı veya şifre yanlış !");
             }
-         
-            
         }
     }
 }
