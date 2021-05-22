@@ -20,6 +20,8 @@ namespace DataAccess.Concrete
         public DbSet<illness> tblillness { get; set; }
         public DbSet<User> tblUsers { get; set; }
         public DbSet<UserType> tblUserTypes { get; set; }
+        public DbSet<DietCalendar> tblDietCalendar { get; set; }
+
 
 
 

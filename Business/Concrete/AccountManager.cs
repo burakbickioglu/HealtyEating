@@ -39,5 +39,10 @@ namespace Business.Concrete
         {
             return _accountDal.Delete(entity);
         }
+
+        public Account getByUserName(Account account)
+        {
+            return _accountDal.Get(p => p.UserName == account.UserName);
+        }
     }
 }

@@ -5,9 +5,7 @@ using Entities.Concrete;
 
 namespace Business.Abstract
 {
-    public interface IAccountService : IBaseService<Account>
+    public interface IDietCalendarService : IBaseService<DietCalendar>
     {
-        Account getByUserName(Account account);
     }
 }
- 

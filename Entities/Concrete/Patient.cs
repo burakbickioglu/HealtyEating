@@ -8,9 +8,10 @@ namespace Entities.Concrete
     public class Patient : IEntity
     {
         public int Id { get; set; } 
-        public int illnesid { get; set; }
+        public int illnessid { get; set; }
         public int DietId { get; set; }
-       
+
+        public string PatientDescription { get; set; }
 
     }
 }
