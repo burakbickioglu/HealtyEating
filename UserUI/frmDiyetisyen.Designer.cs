@@ -47,7 +47,6 @@ namespace UserUI
             this.txtHastaTc = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnDiyetGuncelle = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.cmbDiyetTuru = new System.Windows.Forms.ComboBox();
@@ -65,10 +64,10 @@ namespace UserUI
             this.label14 = new System.Windows.Forms.Label();
             this.lblHastaAd = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.rchDiyet = new System.Windows.Forms.RichTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -202,6 +201,7 @@ namespace UserUI
             this.btnHastaEkle.TabIndex = 3;
             this.btnHastaEkle.Text = "Hasta Ekle";
             this.btnHastaEkle.UseVisualStyleBackColor = true;
+            this.btnHastaEkle.Click += new System.EventHandler(this.btnHastaEkle_Click);
             // 
             // btnHastaAra
             // 
@@ -230,7 +230,7 @@ namespace UserUI
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.dataGridView1);
+            this.groupBox3.Controls.Add(this.rchDiyet);
             this.groupBox3.Controls.Add(this.btnDiyetGuncelle);
             this.groupBox3.Controls.Add(this.label19);
             this.groupBox3.Controls.Add(this.cmbDiyetTuru);
@@ -243,16 +243,6 @@ namespace UserUI
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Şikayet Ve Tedavi";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 371);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(768, 259);
-            this.dataGridView1.TabIndex = 15;
             // 
             // btnDiyetGuncelle
             // 
@@ -416,6 +406,15 @@ namespace UserUI
             this.label16.TabIndex = 0;
             this.label16.Text = "Ad:";
             // 
+            // rchDiyet
+            // 
+            this.rchDiyet.Location = new System.Drawing.Point(2, 364);
+            this.rchDiyet.Name = "rchDiyet";
+            this.rchDiyet.ReadOnly = true;
+            this.rchDiyet.Size = new System.Drawing.Size(768, 266);
+            this.rchDiyet.TabIndex = 15;
+            this.rchDiyet.Text = resources.GetString("rchDiyet.Text");
+            // 
             // frmDiyetisyen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
@@ -436,7 +435,6 @@ namespace UserUI
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
@@ -479,6 +477,6 @@ namespace UserUI
         private System.Windows.Forms.Button btnHastaEkle;
         private System.Windows.Forms.Button btnHastaAra;
         private System.Windows.Forms.Button btnDiyetGuncelle;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.RichTextBox rchDiyet;
     }
 }

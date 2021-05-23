@@ -33,5 +33,11 @@ namespace UserUI
             lblDiyetisyenMail.Text = _user.Email;
             lblDiyetisyenTel.Text = _user.PhoneNumber;
         }
+
+        private void btnHastaEkle_Click(object sender, EventArgs e)
+        {
+            frmHastaEkle frmHastaEkle = new frmHastaEkle();
+            frmHastaEkle.ShowDialog();
+        }
     }
 }

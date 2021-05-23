@@ -191,6 +191,7 @@ namespace UserUI
             this.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "frmDiyetisyenEkle";
             this.Text = "frmDiyetisyenEkle";
+            this.Load += new System.EventHandler(this.frmDiyetisyenEkle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

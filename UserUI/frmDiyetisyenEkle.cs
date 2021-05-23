@@ -56,5 +56,10 @@ namespace UserUI
 
 
         }
+
+        private void frmDiyetisyenEkle_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
