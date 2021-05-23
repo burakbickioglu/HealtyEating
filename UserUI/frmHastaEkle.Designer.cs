@@ -101,6 +101,7 @@ namespace UserUI
             // 
             // cmbDiyet
             // 
+            this.cmbDiyet.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDiyet.FormattingEnabled = true;
             this.cmbDiyet.Location = new System.Drawing.Point(110, 299);
             this.cmbDiyet.Name = "cmbDiyet";
@@ -109,6 +110,7 @@ namespace UserUI
             // 
             // cmbHastalık
             // 
+            this.cmbHastalık.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbHastalık.FormattingEnabled = true;
             this.cmbHastalık.Location = new System.Drawing.Point(110, 254);
             this.cmbHastalık.Name = "cmbHastalık";

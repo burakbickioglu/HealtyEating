@@ -47,6 +47,7 @@ namespace UserUI
             this.txtHastaTc = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.rchDiyet = new System.Windows.Forms.RichTextBox();
             this.btnDiyetGuncelle = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.cmbDiyetTuru = new System.Windows.Forms.ComboBox();
@@ -64,7 +65,6 @@ namespace UserUI
             this.label14 = new System.Windows.Forms.Label();
             this.lblHastaAd = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.rchDiyet = new System.Windows.Forms.RichTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -211,6 +211,7 @@ namespace UserUI
             this.btnHastaAra.TabIndex = 2;
             this.btnHastaAra.Text = "Hasta Ara";
             this.btnHastaAra.UseVisualStyleBackColor = true;
+            this.btnHastaAra.Click += new System.EventHandler(this.btnHastaAra_Click);
             // 
             // txtHastaTc
             // 
@@ -244,19 +245,29 @@ namespace UserUI
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Şikayet Ve Tedavi";
             // 
+            // rchDiyet
+            // 
+            this.rchDiyet.Location = new System.Drawing.Point(2, 308);
+            this.rchDiyet.Name = "rchDiyet";
+            this.rchDiyet.ReadOnly = true;
+            this.rchDiyet.Size = new System.Drawing.Size(768, 322);
+            this.rchDiyet.TabIndex = 15;
+            this.rchDiyet.Text = resources.GetString("rchDiyet.Text");
+            // 
             // btnDiyetGuncelle
             // 
-            this.btnDiyetGuncelle.Location = new System.Drawing.Point(484, 280);
+            this.btnDiyetGuncelle.Location = new System.Drawing.Point(484, 220);
             this.btnDiyetGuncelle.Name = "btnDiyetGuncelle";
             this.btnDiyetGuncelle.Size = new System.Drawing.Size(145, 39);
             this.btnDiyetGuncelle.TabIndex = 3;
             this.btnDiyetGuncelle.Text = "Güncelle";
             this.btnDiyetGuncelle.UseVisualStyleBackColor = true;
+            this.btnDiyetGuncelle.Click += new System.EventHandler(this.btnDiyetGuncelle_Click);
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(291, 336);
+            this.label19.Location = new System.Drawing.Point(291, 280);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(122, 25);
             this.label19.TabIndex = 14;
@@ -265,7 +276,7 @@ namespace UserUI
             // cmbDiyetTuru
             // 
             this.cmbDiyetTuru.FormattingEnabled = true;
-            this.cmbDiyetTuru.Location = new System.Drawing.Point(264, 280);
+            this.cmbDiyetTuru.Location = new System.Drawing.Point(264, 224);
             this.cmbDiyetTuru.Name = "cmbDiyetTuru";
             this.cmbDiyetTuru.Size = new System.Drawing.Size(200, 33);
             this.cmbDiyetTuru.TabIndex = 12;
@@ -273,7 +284,7 @@ namespace UserUI
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(6, 283);
+            this.label18.Location = new System.Drawing.Point(6, 227);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(199, 25);
             this.label18.TabIndex = 11;
@@ -293,7 +304,7 @@ namespace UserUI
             this.rchHastaSikayet.Location = new System.Drawing.Point(0, 74);
             this.rchHastaSikayet.Name = "rchHastaSikayet";
             this.rchHastaSikayet.ReadOnly = true;
-            this.rchHastaSikayet.Size = new System.Drawing.Size(768, 187);
+            this.rchHastaSikayet.Size = new System.Drawing.Size(768, 139);
             this.rchHastaSikayet.TabIndex = 1;
             this.rchHastaSikayet.Text = resources.GetString("rchHastaSikayet.Text");
             // 
@@ -405,15 +416,6 @@ namespace UserUI
             this.label16.Size = new System.Drawing.Size(39, 25);
             this.label16.TabIndex = 0;
             this.label16.Text = "Ad:";
-            // 
-            // rchDiyet
-            // 
-            this.rchDiyet.Location = new System.Drawing.Point(2, 364);
-            this.rchDiyet.Name = "rchDiyet";
-            this.rchDiyet.ReadOnly = true;
-            this.rchDiyet.Size = new System.Drawing.Size(768, 266);
-            this.rchDiyet.TabIndex = 15;
-            this.rchDiyet.Text = resources.GetString("rchDiyet.Text");
             // 
             // frmDiyetisyen
             // 

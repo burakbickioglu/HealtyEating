@@ -292,6 +292,8 @@ namespace UserUI
             // 
             // cmbDiyetisyen
             // 
+            this.cmbDiyetisyen.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cmbDiyetisyen.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbDiyetisyen.FormattingEnabled = true;
             this.cmbDiyetisyen.Location = new System.Drawing.Point(211, 42);
             this.cmbDiyetisyen.Name = "cmbDiyetisyen";
