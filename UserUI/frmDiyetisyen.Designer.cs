@@ -65,6 +65,7 @@ namespace UserUI
             this.label14 = new System.Windows.Forms.Label();
             this.lblHastaAd = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.btnRapor = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -231,6 +232,7 @@ namespace UserUI
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.btnRapor);
             this.groupBox3.Controls.Add(this.rchDiyet);
             this.groupBox3.Controls.Add(this.btnDiyetGuncelle);
             this.groupBox3.Controls.Add(this.label19);
@@ -417,6 +419,16 @@ namespace UserUI
             this.label16.TabIndex = 0;
             this.label16.Text = "Ad:";
             // 
+            // btnRapor
+            // 
+            this.btnRapor.Location = new System.Drawing.Point(648, 19);
+            this.btnRapor.Name = "btnRapor";
+            this.btnRapor.Size = new System.Drawing.Size(114, 41);
+            this.btnRapor.TabIndex = 11;
+            this.btnRapor.Text = "Rapor Al";
+            this.btnRapor.UseVisualStyleBackColor = true;
+            this.btnRapor.Click += new System.EventHandler(this.btnRapor_Click);
+            // 
             // frmDiyetisyen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
@@ -480,5 +492,6 @@ namespace UserUI
         private System.Windows.Forms.Button btnHastaAra;
         private System.Windows.Forms.Button btnDiyetGuncelle;
         private System.Windows.Forms.RichTextBox rchDiyet;
+        private System.Windows.Forms.Button btnRapor;
     }
 }

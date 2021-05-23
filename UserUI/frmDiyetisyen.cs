@@ -112,5 +112,11 @@ namespace UserUI
                 MessageBox.Show("Diyet güncellenemedi !");
             }
         }
+
+        private void btnRapor_Click(object sender, EventArgs e)
+        {
+            frmRapor frmRapor = new frmRapor(hastaDetay);
+            frmRapor.ShowDialog();
+        }
     }
 }
