@@ -44,7 +44,7 @@ namespace UserUI
             "Önce diyet, sonra hasta bilgisi"});
             this.cmbSiralama.Location = new System.Drawing.Point(125, 9);
             this.cmbSiralama.Name = "cmbSiralama";
-            this.cmbSiralama.Size = new System.Drawing.Size(240, 39);
+            this.cmbSiralama.Size = new System.Drawing.Size(240, 33);
             this.cmbSiralama.TabIndex = 0;
             this.cmbSiralama.SelectedIndexChanged += new System.EventHandler(this.cmbSiralama_SelectedIndexChanged);
             // 
@@ -53,7 +53,7 @@ namespace UserUI
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(25, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 32);
+            this.label1.Size = new System.Drawing.Size(94, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Sıralama: ";
             // 
@@ -62,7 +62,7 @@ namespace UserUI
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 68);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 32);
+            this.label2.Size = new System.Drawing.Size(107, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Rapor Tipi: ";
             // 
@@ -74,7 +74,7 @@ namespace UserUI
             "HTML"});
             this.cmbRapor.Location = new System.Drawing.Point(125, 65);
             this.cmbRapor.Name = "cmbRapor";
-            this.cmbRapor.Size = new System.Drawing.Size(96, 39);
+            this.cmbRapor.Size = new System.Drawing.Size(96, 33);
             this.cmbRapor.TabIndex = 2;
             // 
             // btnRaporAl
@@ -85,10 +85,11 @@ namespace UserUI
             this.btnRaporAl.TabIndex = 4;
             this.btnRaporAl.Text = "Rapor Al";
             this.btnRaporAl.UseVisualStyleBackColor = true;
+            this.btnRaporAl.Click += new System.EventHandler(this.btnRaporAl_Click_1);
             // 
             // frmRapor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(381, 112);
             this.Controls.Add(this.btnRaporAl);

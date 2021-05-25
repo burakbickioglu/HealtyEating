@@ -30,7 +30,7 @@ namespace UserUI
         }
         private void frmRapor_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void cmbSiralama_SelectedIndexChanged(object sender, EventArgs e)
@@ -38,17 +38,45 @@ namespace UserUI
 
         }
 
-        private void btnRaporAl_Click(object sender, EventArgs e)
+
+
+        private void btnRaporAl_Click_1(object sender, EventArgs e)
         {
 
-            //if (cmbRapor.Text == "JSON")
-            //{
-                
-            //}
             dietToPatientDto = patientManager.GetDietToPatientDto(_hastaDetay.Id);
             patientToDietDto = patientManager.GetPatientToDietDto(_hastaDetay.Id);
-            JsonReporter jsonReporter = new JsonReporter();
-            jsonReporter.CreateJson(dietToPatientDto, "userData.json");
+
+            if (cmbRapor.Text == "JSON")
+            {
+                JsonReporter jsonReporter = new JsonReporter();
+
+
+                if (cmbSiralama.Text == "Önce hasta bilgisi, sonra diyet")
+                {
+                    jsonReporter.CreateJson(patientToDietDto, "userData.json");
+
+                }
+                else
+                {
+                    jsonReporter.CreateJson(dietToPatientDto, "userData.json");
+                }
+            }
+
+            else if (cmbRapor.Text == "HTML")
+            {
+                HtmlReporter htmlReporter = new HtmlReporter();
+                if (cmbSiralama.Text == "Önce hasta bilgisi, sonra diyet")
+                {
+                    htmlReporter.build(patientToDietDto, true);
+
+                }
+                else
+                {
+                    htmlReporter.build(patientToDietDto, false);
+
+                }
+            }
+            
         }
     }
 }
