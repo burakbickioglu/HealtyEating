@@ -45,22 +45,22 @@ namespace UserUI
 
         public void adminBilgiDoldur()
         {
-            lblAdminAd.Text = _admin.FirstName;
-            lblAdminSoyad.Text = _admin.LastName;
-            lblAdminMail.Text = _admin.Email;
-            lblAdminTc.Text = _admin.NationalIdentity;
-            lblAdminTel.Text = _admin.PhoneNumber;
+            lblAdminAd.Text = ": "+_admin.FirstName;
+            lblAdminSoyad.Text = ": " + _admin.LastName;
+            lblAdminMail.Text = ": " + _admin.Email;
+            lblAdminTc.Text = ": " + _admin.NationalIdentity;
+            lblAdminTel.Text = ": " + _admin.PhoneNumber;
         }
 
         private void cmbDiyetisyen_SelectedIndexChanged(object sender, EventArgs e)
         {
             DietitianDto selectedDietitian;
             selectedDietitian = _dietitians.SingleOrDefault(p => p.FirstName + " " + p.LastName == cmbDiyetisyen.Text);
-            lblDiyetisyenAd.Text = selectedDietitian.FirstName;
-            lblDiyetisyenSoyad.Text = selectedDietitian.LastName;
-            lblDiyetisyenTc.Text = selectedDietitian.NationalIdentity;
-            lblDiyetisyenMail.Text = selectedDietitian.Email;
-            lblDiyetisyenTel.Text = selectedDietitian.PhoneNumber;
+            lblDiyetisyenAd.Text = ": " + selectedDietitian.FirstName;
+            lblDiyetisyenSoyad.Text = ": " + selectedDietitian.LastName;
+            lblDiyetisyenTc.Text = ": " + selectedDietitian.NationalIdentity;
+            lblDiyetisyenMail.Text = ": " + selectedDietitian.Email;
+            lblDiyetisyenTel.Text = ": " + selectedDietitian.PhoneNumber;
         }
 
         private void btnDiyetisyenEkle_Click(object sender, EventArgs e)
@@ -78,6 +78,36 @@ namespace UserUI
             lblDiyetisyenTc.ResetText();
             lblDiyetisyenTel.ResetText();
             
+        }
+
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private int Mouse_X;
+        private int Mouse_Y;
+        private int Move;
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            Move = 1; 
+            Mouse_X = e.X;
+            Mouse_Y = e.Y;
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (Move == 1) { this.SetDesktopLocation(MousePosition.X - Mouse_X, MousePosition.Y - Mouse_Y); }
+        }
+
+        private void panel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            Move = 0;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

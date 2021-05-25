@@ -76,7 +76,10 @@ namespace UserUI
 
                 }
             }
-            
+
+            MessageBox.Show("Rapor oluşturuldu !");
+            this.Hide();
+
         }
     }
 }

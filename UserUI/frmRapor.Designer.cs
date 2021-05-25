@@ -38,13 +38,15 @@ namespace UserUI
             // 
             // cmbSiralama
             // 
+            this.cmbSiralama.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cmbSiralama.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbSiralama.FormattingEnabled = true;
             this.cmbSiralama.Items.AddRange(new object[] {
             "Önce hasta bilgisi, sonra diyet",
             "Önce diyet, sonra hasta bilgisi"});
             this.cmbSiralama.Location = new System.Drawing.Point(125, 9);
             this.cmbSiralama.Name = "cmbSiralama";
-            this.cmbSiralama.Size = new System.Drawing.Size(240, 33);
+            this.cmbSiralama.Size = new System.Drawing.Size(377, 33);
             this.cmbSiralama.TabIndex = 0;
             this.cmbSiralama.SelectedIndexChanged += new System.EventHandler(this.cmbSiralama_SelectedIndexChanged);
             // 
@@ -79,7 +81,7 @@ namespace UserUI
             // 
             // btnRaporAl
             // 
-            this.btnRaporAl.Location = new System.Drawing.Point(239, 65);
+            this.btnRaporAl.Location = new System.Drawing.Point(376, 64);
             this.btnRaporAl.Name = "btnRaporAl";
             this.btnRaporAl.Size = new System.Drawing.Size(126, 33);
             this.btnRaporAl.TabIndex = 4;
@@ -91,7 +93,7 @@ namespace UserUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(381, 112);
+            this.ClientSize = new System.Drawing.Size(514, 112);
             this.Controls.Add(this.btnRaporAl);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmbRapor);

@@ -11,15 +11,15 @@ namespace Core.Utils.Reporter.Concrete
     {
         public void build(PatientToDietDto patientToDietDto , bool select)
         {
-            string patientInfo = "Hasta Adı: " + patientToDietDto.FirstName + "<br>Hasta Soyadı: " +
+            string patientInfo = "<b>HASTA BİLGİLERİ</b><br><br>Hasta Adı: " + patientToDietDto.FirstName + "<br>Hasta Soyadı: " +
                                  patientToDietDto.LastName + "<br>TC: " + patientToDietDto.NationalIdentity +
                                  "<br>E mail: " + patientToDietDto.Email + "<br>Telefon: " + patientToDietDto.PhoneNumber +
                                  "<br>Şikayet: " + patientToDietDto.PatientDescription + "<br><br><br><br><br>";
 
-            string dietInfo = "Diyet adı: " + patientToDietDto.DietName + "<br>Pazartesi: " + patientToDietDto.Pazartesi +
-                              "<br>Salı: " + patientToDietDto.Sali + "<br>Çarşamba: " + patientToDietDto.Carsamba +
-                              "<br>Perşembe: " + patientToDietDto.Persembe + "<br>Cuma: " + patientToDietDto.Cuma +
-                              "<br>Cumartesi: " + patientToDietDto.Cumartesi + "<br>Pazar: " + patientToDietDto.Pazar + "<br><br><br><br><br>";
+            string dietInfo = "<b>DİYET BİLGİLERİ</b><br><br>Diyet adı: " + patientToDietDto.DietName + "<br><br>" + patientToDietDto.Pazartesi +
+                              "<br><br>" + patientToDietDto.Sali + "<br><br>" + patientToDietDto.Carsamba +
+                              "<br><br>" + patientToDietDto.Persembe + "<br><br>" + patientToDietDto.Cuma +
+                              "<br><br>" + patientToDietDto.Cumartesi + "<br><br>" + patientToDietDto.Pazar + "<br><br><br><br><br>";
 
             if (select) // select true ise önce hasta bilgisi, sonra diyet bilgisi görüntülenecek
             {
@@ -39,7 +39,7 @@ namespace Core.Utils.Reporter.Concrete
         {
 
             string htmlstring =
-                "<html> <body><BIG>" + metin + "</ BIG ></body></html>";
+                "<html> <body style='background-color:#393e46; color: #f7fd04;'><BIG>" + metin + "</ BIG ></body></html>";
 
             File.WriteAllText("userData.html", htmlstring);
         }
