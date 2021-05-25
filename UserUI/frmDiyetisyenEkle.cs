@@ -61,5 +61,37 @@ namespace UserUI
         {
 
         }
+
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
+
+
+        private int Mouse_X;
+        private int Mouse_Y;
+        private int Move;
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            Move = 1;
+            Mouse_X = e.X;
+            Mouse_Y = e.Y;
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (Move == 1) { this.SetDesktopLocation(MousePosition.X - Mouse_X, MousePosition.Y - Mouse_Y); }
+        }
+
+        private void panel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            Move = 0;
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

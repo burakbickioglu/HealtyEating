@@ -303,6 +303,7 @@ namespace UserUI
             this.cmbDiyetisyen.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbDiyetisyen.BackColor = System.Drawing.SystemColors.Window;
             this.cmbDiyetisyen.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cmbDiyetisyen.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cmbDiyetisyen.ForeColor = System.Drawing.SystemColors.WindowText;
             this.cmbDiyetisyen.FormattingEnabled = true;
             this.cmbDiyetisyen.Location = new System.Drawing.Point(214, 235);

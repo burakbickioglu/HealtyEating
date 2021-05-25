@@ -57,10 +57,51 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="rchDiyet.Text" xml:space="preserve">
-    <value>denemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedeneme</value>
+  <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=4.0.2.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+  <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAABBdJREFUWEfN
+        mFuoVGUYhrd5SA2DzLK6Kc2SBCGDyLvuOkFUhBJIRRSmUIZFN4EZUQnd2AmU6sZuwk50FXSQohNRlNmN
+        hB3oTCVBEGTH3fN+37tm1tp7zcxae89se+CFme99v///Z++Z9f9rjQ2L8fHx49Fr6FW9dvn/AQtagvaj
+        go/QibaPLixkIXpXq5rAO2iBY0cHFjAHvaTV9EDeHMdnHiZ/MJbRnx2OjxYmWos6fw1eX4X+RYNQ5kq3
+        qW8uWuu304fBFqBH0X6XVFuEfkZN+Qktcrv6P0YPo/kuTQ0GOA29j8RBl1Wfj55Az1jfoYl8iwr/cdRZ
+        DK8/ReI9dKrL7aDxDPSNRjH6Vy23XYG6FjGRp21XoH4mKn81vkan224GDSeh4lOKv9E9aLYjFajvUWgC
+        T9quQH02uhf9o5A5iJY40h+Cs5B2gwItboPtWvB3R7LKQ7Zrwb8elRf5MppluzeEtkS8yyZbPSGzM6MV
+        7rfdEzK3ZLTDFlv1EFiKfotosstWX8g9kPEKd9nuCzn92Ao091Jbk8HcFbHkEGq0VZHbFh1VbrPdF3K6
+        jH0WHUn9HwVjMToSkWSdrYGQvTNbKtxkeyBkr8mWQGtYbKsLxZvDTj5Htb/YOshujq4q620PhKz29C+j
+        K9loqwvFfekF21xuBPkN2VbhYtuNIK/LWME+lxMKujaVfxyrbDWC/OXZVuEC240gvzrbAq2l+x/kTdn8
+        BQ2+HpUgf2F0VllpuxHkdf39NTqT1bbCvCJrwZsuN4aeNdla4RTbjaHn7WwNOicgGTdkLXje5cbQsyJb
+        K7Q+qdDzQrYGN7ocRnn32ONyY+g5OVs7HLHVCvqeyvZgq8thbMxasNflxtCjQ+grSPv2X6j1hxT0PYsK
+        ulssb9ZlLXjD5dbQeyya57etofctLcB0r6O8OTdrwY+o1a94GGhOVD6lr7EVpvbD8jZ3nq0ZgznPz6kD
+        raV6DqDweljJfS7PGMy5I6cOJn/NKN6eXqAT7jG2Rg5zaScrn+DvsNWFos6Cf4SdXGtr5DBX+Tr8J6q/
+        yGOUz4O6U1toa2Qwx3Hoe01odtuaDOYy9HvEkp22RgZz6J67QHMvs1UPge0R7XKdraHD2OV/rdhuqzeE
+        5qEPIp7oU11ke2gw5iUeu0APCOba7g/B5egHdRltX43uMZrAWLpiaFss0Fy1DwV6QoPOiHqmUkZPENoN
+        VIJePVV4TgOV0M7VPfu1gcaV6AuNUkKXokfQCscGQvYs9BjSJaSM7n3OdmxqMIDu9l7UaDUcQHejS9E5
+        SF8NSa8vQ/rBfYLq0NnvBE8zfRhsPdKDnunyFbraww4XBtZxahPSQ/K2fIh0azvl41grmEjfz1vRXqQn
+        /IeRHqtJeq0PIU/PX6b4PRsb+w8p0/KB9JrkTwAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="rchHastaSikayet.Text" xml:space="preserve">
-    <value>denemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedenemedeneme</value>
+  <data name="btnCikis.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAABBdJREFUWEfN
+        mFuoVGUYhrd5SA2DzLK6Kc2SBCGDyLvuOkFUhBJIRRSmUIZFN4EZUQnd2AmU6sZuwk50FXSQohNRlNmN
+        hB3oTCVBEGTH3fN+37tm1tp7zcxae89se+CFme99v///Z++Z9f9rjQ2L8fHx49Fr6FW9dvn/AQtagvaj
+        go/QibaPLixkIXpXq5rAO2iBY0cHFjAHvaTV9EDeHMdnHiZ/MJbRnx2OjxYmWos6fw1eX4X+RYNQ5kq3
+        qW8uWuu304fBFqBH0X6XVFuEfkZN+Qktcrv6P0YPo/kuTQ0GOA29j8RBl1Wfj55Az1jfoYl8iwr/cdRZ
+        DK8/ReI9dKrL7aDxDPSNRjH6Vy23XYG6FjGRp21XoH4mKn81vkan224GDSeh4lOKv9E9aLYjFajvUWgC
+        T9quQH02uhf9o5A5iJY40h+Cs5B2gwItboPtWvB3R7LKQ7Zrwb8elRf5MppluzeEtkS8yyZbPSGzM6MV
+        7rfdEzK3ZLTDFlv1EFiKfotosstWX8g9kPEKd9nuCzn92Ao091Jbk8HcFbHkEGq0VZHbFh1VbrPdF3K6
+        jH0WHUn9HwVjMToSkWSdrYGQvTNbKtxkeyBkr8mWQGtYbKsLxZvDTj5Htb/YOshujq4q620PhKz29C+j
+        K9loqwvFfekF21xuBPkN2VbhYtuNIK/LWME+lxMKujaVfxyrbDWC/OXZVuEC240gvzrbAq2l+x/kTdn8
+        BQ2+HpUgf2F0VllpuxHkdf39NTqT1bbCvCJrwZsuN4aeNdla4RTbjaHn7WwNOicgGTdkLXje5cbQsyJb
+        K7Q+qdDzQrYGN7ocRnn32ONyY+g5OVs7HLHVCvqeyvZgq8thbMxasNflxtCjQ+grSPv2X6j1hxT0PYsK
+        ulssb9ZlLXjD5dbQeyya57etofctLcB0r6O8OTdrwY+o1a94GGhOVD6lr7EVpvbD8jZ3nq0ZgznPz6kD
+        raV6DqDweljJfS7PGMy5I6cOJn/NKN6eXqAT7jG2Rg5zaScrn+DvsNWFos6Cf4SdXGtr5DBX+Tr8J6q/
+        yGOUz4O6U1toa2Qwx3Hoe01odtuaDOYy9HvEkp22RgZz6J67QHMvs1UPge0R7XKdraHD2OV/rdhuqzeE
+        5qEPIp7oU11ke2gw5iUeu0APCOba7g/B5egHdRltX43uMZrAWLpiaFss0Fy1DwV6QoPOiHqmUkZPENoN
+        VIJePVV4TgOV0M7VPfu1gcaV6AuNUkKXokfQCscGQvYs9BjSJaSM7n3OdmxqMIDu9l7UaDUcQHejS9E5
+        SF8NSa8vQ/rBfYLq0NnvBE8zfRhsPdKDnunyFbraww4XBtZxahPSQ/K2fIh0azvl41grmEjfz1vRXqQn
+        /IeRHqtJeq0PIU/PX6b4PRsb+w8p0/KB9JrkTwAAAABJRU5ErkJggg==
+</value>
   </data>
 </root>

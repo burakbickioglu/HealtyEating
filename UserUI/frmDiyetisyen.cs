@@ -48,30 +48,32 @@ namespace UserUI
         }
         public void diyetisyenBilgiDoldur()
         {
-            lblDiyetisyenAd.Text = _diyetisyen.FirstName;
-            lblDiyetisyenSoyad.Text = _diyetisyen.LastName;
-            lblDiyetisyenTc.Text = _diyetisyen.NationalIdentity;
-            lblDiyetisyenMail.Text = _diyetisyen.Email;
-            lblDiyetisyenTel.Text = _diyetisyen.PhoneNumber;
+            lblDiyetisyenAd.Text = ": " + _diyetisyen.FirstName;
+            lblDiyetisyenSoyad.Text = ": " + _diyetisyen.LastName;
+            lblDiyetisyenTc.Text = ": " + _diyetisyen.NationalIdentity;
+            lblDiyetisyenMail.Text = ": " + _diyetisyen.Email;
+            lblDiyetisyenTel.Text = ": " + _diyetisyen.PhoneNumber;
         }
 
         public void hastaBilgiDoldur()
         {
-            lblHastaAd.Text = hasta.FirstName;
-            lblHastaSoyad.Text = hasta.LastName;
-            lblHastaMail.Text = hasta.Email;
-            lblHastaTc.Text = hasta.NationalIdentity;
-            lblHastaTel.Text = hasta.PhoneNumber;
+            lblHastaAd.Text = ": " + hasta.FirstName;
+            lblHastaSoyad.Text = ": " + hasta.LastName;
+            lblHastaMail.Text = ": " + hasta.Email;
+            lblHastaTc.Text = ": " + hasta.NationalIdentity;
+            lblHastaTel.Text = ": " + hasta.PhoneNumber;
 
             int hastaId = userManager.GetAll().SingleOrDefault(p => p.NationalIdentity == hasta.NationalIdentity).Id;
+
+            string bosluk = "\n-----------------------------------------------------------------------------------\n";
 
             hastaDetay = patientManager.Get(new Patient { Id = hastaId });
             rchHastaSikayet.Text = hastaDetay.PatientDescription;
             cmbDiyetTuru.Text = dietManager.Get(new Diet { DietId = hastaDetay.DietId }).DietName;
             hastaDietDetay = dietCalendarManager.Get(new DietCalendar { DietId = hastaDetay.DietId });
-            rchDiyet.Text = hastaDietDetay.Pazartesi + "\n-----------------------------------------------------------------------------------\n" + hastaDietDetay.Sali + "\n-----------------------------------------------------------------------------------\n" + hastaDietDetay.Carsamba +
-                            "\n-----------------------------------------------------------------------------------\n" + hastaDietDetay.Persembe + "\n-----------------------------------------------------------------------------------\n" + hastaDietDetay.Cuma + "\n-----------------------------------------------------------------------------------\n" +
-                            hastaDietDetay.Cumartesi + "\n-----------------------------------------------------------------------------------\n" + hastaDietDetay.Pazar;
+            rchDiyet.Text = hastaDietDetay.Pazartesi + bosluk + hastaDietDetay.Sali + bosluk + hastaDietDetay.Carsamba +
+                            bosluk + hastaDietDetay.Persembe + bosluk + hastaDietDetay.Cuma + bosluk +
+                            hastaDietDetay.Cumartesi + bosluk + hastaDietDetay.Pazar;
 
         }
 
@@ -117,6 +119,38 @@ namespace UserUI
         {
             frmRapor frmRapor = new frmRapor(hastaDetay);
             frmRapor.ShowDialog();
+        }
+
+        
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
+        private int Mouse_X;
+        private int Mouse_Y;
+        private int Move;
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            Move = 1;
+            Mouse_X = e.X;
+            Mouse_Y = e.Y;
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (Move == 1) { this.SetDesktopLocation(MousePosition.X - Mouse_X, MousePosition.Y - Mouse_Y); }
+        }
+
+        private void panel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            Move = 0;
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
