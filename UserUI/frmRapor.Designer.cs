@@ -36,9 +36,9 @@ namespace UserUI
             this.cmbRapor = new System.Windows.Forms.ComboBox();
             this.btnRaporAl = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnCikis = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -119,6 +119,17 @@ namespace UserUI
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(12, 31);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(126, 25);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Rapor Paneli";
+            // 
             // btnCikis
             // 
             this.btnCikis.BackColor = System.Drawing.Color.Transparent;
@@ -142,17 +153,6 @@ namespace UserUI
             this.panel2.Size = new System.Drawing.Size(530, 3);
             this.panel2.TabIndex = 7;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(12, 31);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(126, 25);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Rapor Paneli";
-            // 
             // frmRapor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
@@ -166,6 +166,7 @@ namespace UserUI
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbSiralama);
             this.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmRapor";
             this.Text = "frmRapor";
             this.Load += new System.EventHandler(this.frmRapor_Load);
