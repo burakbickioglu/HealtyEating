@@ -9,7 +9,7 @@ namespace Core.Utils.Reporter.Concrete
 {
     public class HtmlReporter : IReporter
     {
-        public void build(PatientToDietDto patientToDietDto , bool select)
+        public void build(PatientToDietDto patientToDietDto , bool select) 
         {
             string patientInfo = "<b>HASTA BİLGİLERİ</b><br><br>Hasta Adı: " + patientToDietDto.FirstName + "<br>Hasta Soyadı: " +
                                  patientToDietDto.LastName + "<br>TC: " + patientToDietDto.NationalIdentity +
